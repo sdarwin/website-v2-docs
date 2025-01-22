@@ -97,11 +97,12 @@ jobs:
           set -x
           
           # Only build lib playbook if it changed
-          if [ "$changed_ui" = true ] || [ "$changed_ext" = true ] || [ "$changed_libs" = true ] || [ "$changed_actions" = true ] || [ "$changed_packages" = true ]; then
-              echo "build-libs=true" >> $GITHUB_OUTPUT
-          else
-              echo "build-libs=false" >> $GITHUB_OUTPUT
-          fi
+          echo "build-libs=true" >> $GITHUB_OUTPUT
+          # if [ "$changed_ui" = true ] || [ "$changed_ext" = true ] || [ "$changed_libs" = true ] || [ "$changed_actions" = true ] || [ "$changed_packages" = true ]; then
+          #     echo "build-libs=true" >> $GITHUB_OUTPUT
+          # else
+          #     echo "build-libs=false" >> $GITHUB_OUTPUT
+          # fi
 
       - name: Build sitedocs
         shell: bash
