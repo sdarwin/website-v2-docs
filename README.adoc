@@ -465,3 +465,4 @@ This is a convention used by Antora to enable/disable options in bundles.
 The settings defined in the playbook apply to all documentation components.
 
 The UI bundle documentation is available in the `antora-ui/README.adoc` file. This file describes the structure of the UI bundle and how to customize it.
+ 
